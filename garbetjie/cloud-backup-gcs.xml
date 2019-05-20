@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Category>Backup:</Category>
+  <Name>Cloud Backup: Google Cloud Storage</Name>
+  <Description>Synchronise a mounted directory to Google Cloud Storage for offsite backups.</Description>
+  <Registry>https://cloud.docker.com/repository/docker/garbetjie/cloud-backup</Registry>
+  <GitHub>https://github.com/garbetjie/docker-image-cloud-backup-gcs</GitHub>
+  <Repository>garbetjie/cloud-backup:gcs-0.0.1</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>CLOUDSDK_CORE_PROJECT</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>GOOGLE_APPLICATION_CREDENTIALS</Name>
+      <Value>/config/service-account.json</Value>
+    </Variable>
+    <Variable>
+      <Name>BUCKET_NAME</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>BUCKET_PATH</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>DELETE</Name>
+      <Value>false</Value>
+    </Variable>
+  </Environment>
+  <!--<Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>81</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>-->
+  <Data>
+    <Volume>
+      <HostDir>/mnt/appdata/cloud-backup</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>r</Mode>
+    </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/mnt</ContainerDir>
+      <Mode>r</Mode>
+    </Volume>
+  </Data>
+  <Version>0.0.1</Version>
+  <WebUI></WebUI>
+  <Banner><!-- image --></Banner>
+  <Icon><!-- image --></Icon>
+  <ExtraParams></ExtraParams>
+</Container>
