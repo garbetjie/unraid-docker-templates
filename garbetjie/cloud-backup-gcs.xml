@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
   <Category>Backup:</Category>
-  <Name>Cloud Backup: Google Cloud Storage</Name>
+  <Name>Cloud Backup (Google Cloud Storage)</Name>
   <Description>Synchronise a mounted directory to Google Cloud Storage for offsite backups.</Description>
   <Registry>https://cloud.docker.com/repository/docker/garbetjie/cloud-backup</Registry>
   <GitHub>https://github.com/garbetjie/docker-image-cloud-backup-gcs</GitHub>
@@ -57,4 +57,5 @@
   <Banner><!-- image --></Banner>
   <Icon><!-- image --></Icon>
   <ExtraParams></ExtraParams>
+  <Config name="GCP" Target="CLOUDSDK_CORE_PROJECT" Default="" Description="Google Cloud Project" Type="Environment" Required="true" />
 </Container>
