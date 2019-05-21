@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
   <Category>Backup:</Category>
-  <Name>Cloud Backup: Google Cloud Storage</Name>
+  <Name>cloud-backup-gcs</Name>
   <Description>Synchronise a mounted directory to Google Cloud Storage for offsite backups.</Description>
   <Registry>https://cloud.docker.com/repository/docker/garbetjie/cloud-backup</Registry>
   <GitHub>https://github.com/garbetjie/docker-image-cloud-backup-gcs</GitHub>
-  <Repository>garbetjie/cloud-backup:gcs-0.0.1</Repository>
+  <Repository>garbetjie/cloud-backup:gcs-0.0.2</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment />
@@ -45,5 +45,5 @@
   <Config Name="Bucket Path" Target="BUCKET_PATH" Default="" Description="The path prefix in the bucket to sync files to (defaults to the root)" Type="Variable" Required="false" />
   <Config Name="Delete Files" Target="DELETE" Default="false" Description="Whether to delete files in the bucket that don't exist locally after syncing (one of true or false)" Type="Variable" Required="false" />
   <Config Name="Source" Default="" Target="/mnt" Description="Source directory of files to back up directory." Type="Path" Mode="ro" Required="true" />
-  <Config Name="Configuration" Value="/mnt/user/appdata/cloud-backup" Target="/var/run/config" Description="Configuration directory to mount into the container." Type="Path" Mode="ro" Required="true" />
+  <Config Name="Configuration" Value="" Target="/config" Description="Configuration directory to mount into the container." Type="Path" Mode="ro" Required="true" />
 </Container>
