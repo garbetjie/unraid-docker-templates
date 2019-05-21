@@ -20,7 +20,7 @@
     </Publish>
   </Networking>-->
   <Data>
-    <!-- <Volume>
+    <Volume>
       <HostDir>/mnt/appdata/cloud-backup</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>r</Mode>
@@ -29,7 +29,7 @@
       <HostDir></HostDir>
       <ContainerDir>/mnt</ContainerDir>
       <Mode>r</Mode>
-    </Volume> -->
+    </Volume>
   </Data>
   <Version>0.0.1</Version>
   <WebUI></WebUI>
@@ -42,5 +42,5 @@
   <Config Name="Bucket Name" Target="BUCKET_NAME" Default="" Description="The bucket to sync files to" Type="Variable" Required="true" />
   <Config Name="Bucket Path" Target="BUCKET_PATH" Default="" Description="The path prefix in the bucket to sync files to (defaults to the root)" Type="Variable" Required="false" />
   <Config Name="Delete Files" Target="DELETE" Default="false" Description="Whether to delete files in the bucket that don't exist locally after syncing (one of true or false)" Type="Variable" Required="false" />
-  <Config Name="Config Directory" HostDir="/mnt/appdata/cloud-backup" Default="/mnt/appdata/cloud-backup" ContainerDir="/config" Description="Configuration directory." Type="Path" Mode="r" Required="false" />
+  <!-- <Config Name="Config Directory" HostDir="/mnt/appdata/cloud-backup" Default="/mnt/appdata/cloud-backup" ContainerDir="/config" Description="Configuration directory." Type="Path" Mode="r" Required="false" /> -->
 </Container>
