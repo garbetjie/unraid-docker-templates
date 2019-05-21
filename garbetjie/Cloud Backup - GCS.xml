@@ -9,10 +9,10 @@
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
-    <Variable>
+    <!-- <Variable>
       <Name>CLOUDSDK_CORE_PROJECT</Name>
       <Value></Value>
-    </Variable>
+    </Variable> -->
     <Variable>
       <Name>GOOGLE_APPLICATION_CREDENTIALS</Name>
       <Value>/config/service-account.json</Value>
