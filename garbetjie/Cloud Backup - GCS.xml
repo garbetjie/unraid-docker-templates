@@ -57,5 +57,5 @@
   <Banner><!-- image --></Banner>
   <Icon><!-- image --></Icon>
   <ExtraParams></ExtraParams>
-  <Config name="GCP" Target="CLOUDSDK_CORE_PROJECT" Default="" Description="Google Cloud Project" Type="Variable" Required="true" />
+  <Config Name="GCP" Target="CLOUDSDK_CORE_PROJECT" Default="" Description="Google Cloud Project" Type="Variable" Required="true" />
 </Container>
