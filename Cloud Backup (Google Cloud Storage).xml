@@ -45,5 +45,5 @@
   <Config Name="Bucket Path" Target="BUCKET_PATH" Default="" Description="The path prefix in the bucket to sync files to (defaults to the root)" Type="Variable" Required="false" />
   <Config Name="Delete Files" Target="DELETE" Default="false" Description="Whether to delete files in the bucket that don't exist locally after syncing (one of true or false)" Type="Variable" Required="false" />
   <Config Name="Source" Default="" Target="/mnt" Description="Source directory of files to back up directory." Type="Path" Mode="ro" Required="true" />
-  <Config Name="Configuration" Value="/mnt/user/appdata/cloud-backup" Target="/foobar" Description="Configuration directory to mount into the container." Type="Path" Mode="ro" Required="false" />
+  <Config Name="Configuration" Value="/mnt/user/appdata/cloud-backup" Target="/var/run/config" Description="Configuration directory to mount into the container." Type="Path" Mode="ro" Required="true" />
 </Container>
