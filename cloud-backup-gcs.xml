@@ -39,7 +39,6 @@
   <Icon><!-- image --></Icon>
   <ExtraParams></ExtraParams>
 
-  <Config Name="Google Project ID" Target="CLOUDSDK_CORE_PROJECT" Default="" Description="The ID of your Google Cloud project (eg: galloping-scallywag-01483)" Type="Variable" Required="true" />
   <Config Name="Service Account File" Target="GOOGLE_APPLICATION_CREDENTIALS" Default="/config/service-account.json" Description="The path to the service account JSON file" Type="Variable" Required="false" />
   <Config Name="Bucket Name" Target="BUCKET_NAME" Default="" Description="The bucket to sync files to" Type="Variable" Required="true" />
   <Config Name="Bucket Path" Target="BUCKET_PATH" Default="" Description="The path prefix in the bucket to sync files to (defaults to the root)" Type="Variable" Required="false" />
